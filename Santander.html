@@ -1,0 +1,92 @@
+<html>
+    <head>
+    <style>
+    body{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 29;
+    }
+    ul,ol{
+                list-style: none;
+            }
+            .nav li a{
+                background-color: #FA8072;
+                color: #fff;
+                width: 140px;
+                text-decoration: none;
+                display: block;
+                padding: 10px 15px;
+            }
+            .nav > li{
+                float: center;
+            } 
+            .nav li a:hover{
+                background-color: #434343;
+            }
+            .nav li ul{ 
+                display: none;
+                position: absolute;
+                min-width: 200px;
+            }
+            .nav li:hover > ul {
+                display: block;
+            }
+            #header{
+                margin: left;
+                width: 2000px;
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            input{
+                width: 245px;
+                padding: 10px 10px;
+                font-size: 25;
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            button{
+                margin: 30px;
+                width: 100px;
+               font-size: 20;
+               float: left;             
+            }
+    </style>
+
+
+    </head>
+
+<body>
+    <h1>Santander</h1>
+
+            Ingresa No.Cuenta: <input type="text">
+    <br><br> Cantidad: <input type="text">
+
+    <br><br>
+    <div id="header">
+        <ul class="nav">
+            <li> <a href=""> Banco </a> 
+                <ul>
+                    <li> <a href="index.html"> Principal </a> </li>
+                    <li> <a href="HSBC.html"> HSBC </a> </li>
+                    <li> <a href="BBVA.html"> BBVA </a> </li>
+                    <li> <a href="Banco Azteca.html"> Banco Azteca </a> </li>
+                    <li> <a href="Banorte.html"> Banorte </a> </li>
+                    <li> <a href="CitiBanamex.html"> CitiBanamex </a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+
+    <button onclick="ocultar();ImprimirPagina();mostrar();" id="boton">Imprimir</button>
+
+    <script src="Imprimir.js"></script>
+
+
+</body>
+
+
+
+
+
+</html>

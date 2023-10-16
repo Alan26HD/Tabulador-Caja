@@ -1,0 +1,173 @@
+<html>
+    <title> Contador de Dinero  </title>
+    <head>
+        
+        <style>
+            body{
+                text-align: center;
+                align-items: center;
+            }
+            table, th, tr{
+                border: 3px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                font-size: 20;
+                
+            }
+            th, td{
+                padding: 10px;
+                text-align: center; 
+            tr{
+                text-align: center;
+            }
+            input{
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 15;
+                
+            }
+            }
+             
+            ul,ol{
+                list-style: none;
+            }
+            .nav li a{
+                background-color: #FA8072;
+                color: #fff;
+                width: 140px;
+                text-decoration: none;
+                display: block;
+                padding: 10px 15px;
+            }
+            .nav > li{
+                float: center;
+            } 
+            .nav li a:hover{
+                background-color: #434343;
+            }
+            .nav li ul{ 
+                display: none;
+                position: absolute;
+                min-width: 200px;
+            }
+            .nav li:hover > ul {
+                display: block;
+            }
+            #header{
+                margin: left;
+                width: 2000px;
+                font-size: 20;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            button{
+                margin: 30px;
+                width: 100px;
+               font-size: 20;
+               float: left;             
+            }
+        </style>
+    </head>
+    
+    
+<body>
+    
+    <div id="header">
+        <ul class="nav">
+            <li> <a href=""> Banco </a> 
+                <ul>
+                    <li> <a href="BBVA.html"> BBVA </a> </li>
+                    <li> <a href="HSBC.html"> HSBC </a> </li>
+                    <li> <a href="CitiBanamex.html"> CitiBanamex </a> </li>
+                    <li> <a href="Banco Azteca.html"> Banco Azteca </a> </li>
+                    <li> <a href="Banorte.html"> Banorte </a> </li>
+                    <li> <a href="Santander.html"> Santander </a> </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    
+    
+    <h1 aling="center">Tabulador de caja</h1>
+    
+    <table style="width: 25%;" align="center" >
+        <tr>
+            <th>Valor</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <th>$.50</th>
+            <th><input type="text" id="num22" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado12" size="7" readonly></th>
+        </tr>
+        <tr>
+            <th>$1</th>
+            <th><input type="text" id="num2" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado" size="7" readonly></th>
+        </tr>
+        <tr>
+            <th>$2</th>
+            <th><input type="text" id="num4" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado2" size="7" readonly></th>
+        </tr>
+        <tr>
+            <th>$5</th>
+            <th><input type="text" id="num6" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado3" size="7"readonly></th>
+        </tr>
+        <tr>
+            <th>$10</th>
+            <th><input type="text" id="num8" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado4" size="7"readonly></th>
+        </tr>
+        <tr>
+            <th>$20</th>
+            <th><input type="text" id="num10" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado5" size="7"readonly></th>
+            
+        </tr>
+        <tr>
+            <th>$50</th>
+            <th><input type="text" id="num12" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado6" size="7"readonly></th>
+        </tr>
+        <tr>
+            <th>$100</th>
+            <th><input type="text" id="num14" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado7" size="7"readonly></th>
+        </tr>
+        <tr>
+            <th>$200</th>
+            <th><input type="text" id="num16" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado8" size="7"readonly></th>
+        </tr>
+        <tr>
+            <th>$500</th>
+            <th><input type="text" id="num18" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado9" size="7"readonly></th>
+        </tr>
+        <tr>
+            <th>$1000</th>
+            <th><input type="text" id="num20" size="5" oninput="Multiplicar()"></th>
+            <th><input type="text" id="resultado10" size="7"readonly></th>
+        </tr>
+        <tr>
+            <th colspan="2">Total</th>
+            <th><input type="text" id="resultado11" size="7"  readonly> </th>
+            
+        </tr>
+    </table>
+    <button onclick="ocultar();ImprimirPagina();mostrar();" id="boton">Imprimir</button>
+    
+
+
+
+    
+
+
+<script src="Contador.js"> </script>
+<script src="decimal.min.js"></script>
+<script src="Imprimir.js"></script>
+</body>
+</html>
